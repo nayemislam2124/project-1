@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'DM Sans','Bree Serif';
+}
+/* navbar styling start  */
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background:rgb(184, 184, 184);
+    padding:1rem;
+    transition:all 0.4s ease;
+}
+.logo{
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    gap:0.5rem;
+    position:relative;
+    right:5%;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    
+}
+nav ul li a{
+    text-decoration:none;
+    color:#02073E;
+    font-weight:400;
+    font-size:0.8rem;
+    margin-right:1.5rem;
+    transition:all 0.4s ease;
+
+}
+nav ul li a:hover{
+    color:gray;
+}
+.logins{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.logins li{
+    list-style:none;
+}
+.logins li a{
+    text-decoration:none;
+    color:#02073E;
+    font-size:0.8rem;
+    margin-right:0.5rem;
+}
+.logins button{
+    border:none;
+    background:#3CC68A;
+    color:white;
+    font-weight:700;
+    padding:0.8rem 1.5rem;
+    border-radius:0.5rem;
+}
+/* navbar styling end  */
+
+/* responsive - tablet approach start */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    nav {
+        flex-direction:column;
+        background:none;
+        justify-content:center;
+        align-items: center;
+        text-align:center;
+    }
+    nav ul li{
+        
+        margin-top:2rem;
+    }
+    nav ul li a{
+        width:100%;
+        height:auto;
+        padding:1rem 2rem;
+        background-color:#3CC68A;
+        color:white;
+    }
+    .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
+        display:none;
+    }
+    .logins{
+        display:none;
+    }
+    
+}
+/* responsive - tablet approach end */
+
+/* responsive - mobile approach start */
+@media screen and (max-width: 576px) {
+    nav {
+        flex-direction:column;
+        background:none;
+        justify-content:center;
+        align-items: center;
+        text-align:center;
+    }
+    nav ul li{
+        display:flex;
+        justify-content:space-around;
+        align-items: center;
+        margin-top:1rem;
+    }
+    nav ul li a{
+        width:100%;
+        height:auto;
+        padding:1rem;
+        background-color:#3CC68A;
+        color:white;
+    }
+    .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
+        display:none;
+    }
+    .logins{
+        display:none;
+    }
+    
+}
+/* responsive - mobile approach end */
