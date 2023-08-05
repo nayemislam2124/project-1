@@ -127,8 +127,40 @@ nav ul li a:hover{
     width:400px;
     transition:all 0.4s ease;
 }
-
 /* header banner styling start  */
+
+/* feature items section 1 start  */
+    .feature-section-1{
+        margin-top:2rem;
+    }
+    .feature-1-text{
+        text-align:center;
+    }
+    .feature-1-text p{
+        color:#00A99D;
+        font-weight:500;
+    }
+    .feature-1-text h6{
+        font-size:1rem;
+    }
+    .feature-1-items-container{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        margin-top:2rem;
+        transition:all 0.4s ease;
+    }
+    .feature-1-item{
+        display:flex;
+        margin:2rem;
+        transition:all 0.4s ease;
+    }
+    .feature-1-item i{
+        margin-right:1rem;
+        transition:all 0.4s ease;
+    }
+/* feature items section 1 end */
+
 /* responsive - tablet approach start */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     nav {
@@ -186,7 +218,12 @@ nav ul li a:hover{
     .header-banner-inputs input{
         margin-bottom:1rem;
     }
-    
+    .feature-1-items-container{
+        flex-direction:column;
+    }
+    .feature-1-item h6,p{
+        font-size:1.5rem;
+    }
 }
 /* responsive - tablet approach end */
 
@@ -237,6 +274,12 @@ nav ul li a:hover{
     }
     .header-banner-inputs input{
         margin-bottom:1rem;
+    }
+    .feature-1-items-container{
+        flex-direction:column;
+    }
+    .feature-1-item h6,p{
+        font-size:1.5rem;
     }
 }
 /* responsive - mobile approach end */
