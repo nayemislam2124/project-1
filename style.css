@@ -6,12 +6,19 @@
 body{
     font-family:'DM Sans','Bree Serif';
 }
+/* shared styles start  */
+.primary-p {
+    font-weight:400;
+    font-size:0.6rem;
+    line-height:1.3rem;
+    color:#484848;
+}
+/* shared styles end  */
 /* navbar styling start  */
 nav{
     display:flex;
     justify-content:space-around;
     align-items:center;
-    background:rgb(184, 184, 184);
     padding:1rem;
     transition:all 0.4s ease;
 }
@@ -63,7 +70,65 @@ nav ul li a:hover{
     border-radius:0.5rem;
 }
 /* navbar styling end  */
+/* header banner styling start  */
 
+.header-banner{
+    /* max-width:800px; */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#F9FBFD;
+    padding:2rem;
+    gap:2rem;
+    transition:all 0.4s ease;
+}
+.header-banner h1{
+    font-family:bree serif;
+    font-size:2rem;
+    font-weight:400;
+    transition:all 0.4s ease;
+}
+.header-banner p{
+    margin:1rem 0;
+    transition:all 0.4s ease;
+}
+.header-banner-inputs input{
+    width:16rem;
+    height:2.5rem;
+    background:white;
+    border:none;
+    margin-right:0.5rem;
+    box-shadow:2px 2px 10px rgba(128, 128, 128, 0.193);
+    border-radius:0.2rem;
+    transition:all 0.4s ease;
+}
+.header-banner-inputs button{
+    border:none;
+    background:#3CC68A;
+    color:white;
+    font-weight:700;
+    padding:0.8rem 1.5rem;
+    border-radius:0.5rem;
+}
+.header-banner-social{
+    display:flex;
+    transition:all 0.4s ease;
+}
+.header-banner-social ul li{
+    list-style: none;
+    display:inline-block;
+    margin-right:1rem;
+    margin-top:1rem;
+    font-weight:600;
+    color:#484848c2;
+    transition:all 0.4s ease;
+}
+.header-banner-picture img{
+    width:400px;
+    transition:all 0.4s ease;
+}
+
+/* header banner styling start  */
 /* responsive - tablet approach start */
 @media screen and (min-width: 576px) and (max-width: 992px) {
     nav {
@@ -89,6 +154,37 @@ nav ul li a:hover{
     }
     .logins{
         display:none;
+    }
+    .header-banner{
+        flex-direction:column-reverse;
+        padding:3rem;
+    }
+    .header-banner-text{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .header-banner-text h1{
+        font-size:3rem;
+    }
+    .header-banner-text p{
+        font-size:1.5rem;
+        text-align:left;
+        line-height:2rem;
+    }
+    .header-banner-picture img{
+        width:550px;
+    }
+    .header-banner-inputs{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        padding:1rem;
+    }
+    .header-banner-inputs input{
+        margin-bottom:1rem;
     }
     
 }
@@ -122,6 +218,25 @@ nav ul li a:hover{
     .logins{
         display:none;
     }
-    
+    .header-banner{
+        flex-direction:column-reverse;
+        padding:3rem;
+    }
+    .header-banner-text{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+    }
+    .header-banner-inputs{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items:center;
+        padding:1rem;
+    }
+    .header-banner-inputs input{
+        margin-bottom:1rem;
+    }
 }
 /* responsive - mobile approach end */
