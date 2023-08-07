@@ -600,6 +600,7 @@ footer{
     .feature-section-5-item-container{
         flex-direction:column;
         width:100%;
+        gap:1.5rem;
     }
     
     .feature-section-5-items{
@@ -777,7 +778,7 @@ footer{
     }
     .feature-section-5-item-container{
         flex-direction:column;
-        
+        gap:1.5rem;
     }
     .feature-section-5-items{
         border:1px solid #00a99e31;
