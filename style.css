@@ -545,8 +545,11 @@ footer{
         text-align:left;
         line-height:2rem;
     }
+    #magnify{
+        display:none;
+    }
     .header-banner-picture img{
-        width:550px;
+        width:80%;
     }
     .header-banner-inputs{
         display:flex;
@@ -737,6 +740,12 @@ footer{
     .header-banner-inputs input{
         margin-bottom:1rem;
     }
+    .header-banner-picture img{
+        width:80%;
+    }
+    #magnify{
+        display:none;
+    }
     .feature-1-items-container{
         flex-direction:column;
     }
@@ -852,6 +861,10 @@ footer{
         grid-template-columns:repeat(3,1fr);
         justify-content:center;
         align-items:center;
+        border-radius:1rem;
+    }
+    .footer-nav ul li a{
+        border-radius:0.5rem;
     }
 }
 /* responsive - mobile approach end */
